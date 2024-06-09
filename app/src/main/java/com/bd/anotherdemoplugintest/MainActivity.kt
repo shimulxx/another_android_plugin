@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.bd.anotherdemoplugintest.databinding.ActivityMainBinding
 import com.bd.my_new_lib.MyTest
 
-//tt
+//tth
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
 
