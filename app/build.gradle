@@ -26,6 +26,7 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            consumerProguardFiles 'consumer-rules.pro'
         }
     }
     compileOptions {
@@ -34,6 +35,19 @@ android {
     }
     kotlinOptions {
         jvmTarget = '1.8'
+    }
+}
+
+publishing {
+    publications {
+        maven(MavenPublication){
+            groupId = "com.github.shimulxx"
+            artifactId = "my_new_lib"
+            version = "1.0"
+            pom{
+                description = "First Android Library"
+            }
+        }
     }
 }
 

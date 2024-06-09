@@ -4,5 +4,5 @@ jdk:
 before_install:
   - ./scripts/prepareJitpackEnvironment.sh
 install:
-  - FILE="-my-new-lib-release.aar"
+  - FILE="-Dfile=my-new-lib-release.aar"
   - mvn install:install-file $FILE -DgroupId=com.github.shimulxx -DartifactId=my_new_lib -Dversion=1.0 -Dpackaging=aar -DgeneratePom=true
